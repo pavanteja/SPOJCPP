@@ -3,7 +3,7 @@
 #include <vector>
 #include <time.h>
 using namespace std;
-int main()
+int TDKPRIME()
 {
 	clock_t tStart = clock();
 	const  int n = 86028121;

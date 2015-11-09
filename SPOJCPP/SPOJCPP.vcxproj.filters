@@ -35,5 +35,11 @@
     <ClCompile Include="TDKPRIME.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="EPALIN.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JULKA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
