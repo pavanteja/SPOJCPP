@@ -153,6 +153,7 @@
     <ClCompile Include="CANDY3.cpp" />
     <ClCompile Include="EPALIN.cpp" />
     <ClCompile Include="JULKA.cpp" />
+    <ClCompile Include="MADODDSUM .cpp" />
     <ClCompile Include="SPOJCPP.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

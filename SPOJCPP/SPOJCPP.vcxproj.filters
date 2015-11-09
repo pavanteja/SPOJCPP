@@ -47,5 +47,8 @@
     <ClCompile Include="CANDY3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MADODDSUM .cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
