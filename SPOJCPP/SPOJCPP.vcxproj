@@ -151,6 +151,7 @@
   <ItemGroup>
     <ClCompile Include="BigArth.cpp" />
     <ClCompile Include="CANDY3.cpp" />
+    <ClCompile Include="COINS.cpp" />
     <ClCompile Include="EPALIN.cpp" />
     <ClCompile Include="JULKA.cpp" />
     <ClCompile Include="MADODDSUM .cpp" />
