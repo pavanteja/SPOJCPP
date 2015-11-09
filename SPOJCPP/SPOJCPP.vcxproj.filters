@@ -41,5 +41,11 @@
     <ClCompile Include="JULKA.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="BigArth.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CANDY3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

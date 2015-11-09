@@ -354,7 +354,7 @@ struct bigint {
 		return res;
 	}
 };
-int main()
+int JULKA()
 {
 	int c = 10;
 	while (c)
