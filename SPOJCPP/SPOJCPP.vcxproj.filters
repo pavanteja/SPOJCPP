@@ -56,5 +56,11 @@
     <ClCompile Include="COINS.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="EIGHTS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HANGOVER.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

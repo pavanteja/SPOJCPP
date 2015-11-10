@@ -152,7 +152,9 @@
     <ClCompile Include="BigArth.cpp" />
     <ClCompile Include="CANDY3.cpp" />
     <ClCompile Include="COINS.cpp" />
+    <ClCompile Include="EIGHTS.cpp" />
     <ClCompile Include="EPALIN.cpp" />
+    <ClCompile Include="HANGOVER.cpp" />
     <ClCompile Include="JULKA.cpp" />
     <ClCompile Include="MADODDSUM .cpp" />
     <ClCompile Include="SPOJCPP.cpp" />
