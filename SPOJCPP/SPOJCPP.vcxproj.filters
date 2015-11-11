@@ -62,10 +62,13 @@
     <ClCompile Include="HANGOVER.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ABSYS.cpp">
+    <ClCompile Include="PONY2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PONY2.cpp">
+    <ClCompile Include="ACODE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ABSYS.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

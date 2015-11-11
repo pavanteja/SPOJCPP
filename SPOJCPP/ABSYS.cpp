@@ -1,45 +1,67 @@
 #include "stdafx.h"
 #include <iostream>
-#include <string>
+#include<string>
 using namespace std;
 
-char str[5002];
-
-#define inf 1000000000
-#define MAXN 5005
-
-using namespace std;
-string code;
-int dp[MAXN];
-int limit;
-
-int rek(int idx = 0) {
-	if (idx > limit) return 1;
-
-	if (dp[idx]) return dp[idx];
-
-	if (code[idx] == '0') return 0;
-
-	if (idx + 1 < limit
-		&& (code[idx] == '1' || (code[idx] == '2' && code[idx + 1] <= '6'))) {
-		if (code[idx + 1] == '0')
-			return dp[idx] = rek(idx + 2);
-		else
-			return dp[idx] = rek(idx + 1) + rek(idx + 2);
+enum STR2INT_ERROR { SUCCESS, OF, UF, INCONVERTIBLE };
+STR2INT_ERROR str2int(int &i, char const *s, int base = 0)
+{
+	char *end;
+	long  l;
+	errno = 0;
+	l = strtol(s, &end, base);
+	if ((errno == ERANGE && l == LONG_MAX) || l > INT_MAX) {
+		return OF;
 	}
-	else return dp[idx] = rek(idx + 1);
+	if ((errno == ERANGE && l == LONG_MIN) || l < INT_MIN) {
+		return UF;
+	}
+	if (*s == '\0' || *end != '\0') {
+		return INCONVERTIBLE;
+	}
+	i = l;
+	return SUCCESS;
 }
+int ABSYS()
+{
+	int t;
+	cin >> t;
+	while (t)
+	{
 
-int ACODECOPY() {
-	cin.sync_with_stdio(false);
+		string expression, op1, op2, res1;
+		int a, b, c;
+		int f = 0;
+		getline(cin, expression);
+		if (expression[0] != '\0')
+		{
+			size_t found = expression.find("+");
+			op1 = expression.substr(0, found - 1);
+			size_t found1 = expression.find("=");
+			op2 = expression.substr(found + 2, found1 - found - 3);
+			res1 = expression.substr(found1 + 2);
+			if (str2int(a, op1.c_str()) != 0)
+			{
+				f = 1;
+			}
+			if (str2int(b, op2.c_str()) != 0)
+			{
 
-	while (true) {
-		getline(cin, code);
-		if (code[0] == '0') break;
-		limit = code.size();
-		memset(dp, 0, sizeof dp);
-		printf("%d\n", rek());
+				f = 2;
+			}
+			if (str2int(c, res1.c_str()) != 0)
+			{
+				f = 3;
+			}
+			switch (f)
+			{
+			case 1:cout << (c - b) << " + " << b << " = " << c << endl;break;
+			case 2:cout << a << " + " << (c - a) << " = " << c << endl;break;
+			case 3:cout << a << " + " << b << " = " << (a + b) << endl;break;
+			}
+			
+			t--;
+		}
 	}
-
 	return 0;
 }

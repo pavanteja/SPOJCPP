@@ -150,6 +150,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ABSYS.cpp" />
+    <ClCompile Include="ACODE.cpp" />
     <ClCompile Include="BigArth.cpp" />
     <ClCompile Include="CANDY3.cpp" />
     <ClCompile Include="COINS.cpp" />

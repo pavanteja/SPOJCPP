@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include <iostream>
 using namespace std;
-int main()
+int PONY2()
 {
 	int t;
 	cin >> t;
