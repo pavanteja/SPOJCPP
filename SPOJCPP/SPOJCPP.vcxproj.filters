@@ -77,5 +77,8 @@
     <ClCompile Include="PERMUT2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="STAMPS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
