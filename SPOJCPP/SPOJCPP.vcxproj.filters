@@ -71,5 +71,8 @@
     <ClCompile Include="ABSYS.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CANTON.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
