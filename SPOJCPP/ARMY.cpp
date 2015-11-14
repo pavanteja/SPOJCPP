@@ -1,4 +1,4 @@
-//#include "stdafx.h"
+#include "stdafx.h"
 //#include <iostream>
 //#include<string>
 //#include<math.h>
@@ -62,7 +62,7 @@
 #include <algorithm>
 #include<string>
 using namespace std;
-int main()
+int ARMY()
 {
 	int t, n[100000], m[100000];
 
